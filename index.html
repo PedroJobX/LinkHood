@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variaveis.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="body.css">
+
+    <title>LinkHood</title>
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" tittle="close menu"></label>
+    <aside class="menu white-vg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a class="emoji">🏘️</a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#top3">Top 3</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="intro" class="intro main-vg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>LinkHood</h2>
+                <p>Bem-vindo ao LinkHood! Aqui, sua comunidade ganha vida! Conecte-se com vizinhos, descubra eventos locais e transforme cada dia em uma nova oportunidade de interação. Junte-se a nós e veja como a tecnologia pode trazer a sua vizinhança para o centro das atenções. Entre e sinta a energia da sua comunidade como nunca antes!</p>
+            </div>
+            <div class="intro-img">
+                <img src="Imagens/imgintro/undraw_online_connection_6778.svg" alt="Homem e Mulher em conexão">
+            </div>
+        </div>
+    </section>
+
+    <section id="top3" class="top3 white-vg section">
+        <div class="main-content grid-content">
+            <h2>Top 3</h2>
+
+            <div class="grid">
+
+            <article>
+            <h3>Exclusividade</h3>
+            <p><b>Recursos Exclusivos</b>: LinkHood traz funcionalidades inovadoras que vão além das redes sociais tradicionais. Com chats em tempo real, opções de personalização de temas e uma integração prática de serviços locais, a plataforma facilita a conexão e o compartilhamento de recursos entre vizinhos e comunidades.</p>
+            </article>
+
+            <article>
+            <h3>Interação</h3>
+            <p><b>Vibrante</b>: O LinkHood oferece uma experiência imersiva com uma interface moderna e intuitiva. A comunidade é ativa, promovendo interações genuínas e destacando sempre o conteúdo mais relevante para os usuários.</p>
+            </article>
+
+            <article>
+            <h3>Personalização</h3>
+            <p><b>Personalização Avançada</b>: No LinkHood, cada usuário pode personalizar sua experiência, desde temas de perfil até configurações de privacidade. Grupos e comunidades podem ser criados com regras e designs únicos, refletindo a identidade de seus membros.</p>
+            </article>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre-1 main-vg section">
+        <div class="main-content sobre-content">
+            <div class="sobre-text-content">
+            <h2 class="position-h2">Quem Somos</h2>
+            <p class="position-p">
+                LinkHood é uma rede social dedicada a conectar vizinhos e fortalecer comunidades.
+                <br>
+                <br>
+                Junte-se a nós e descubra como sua vizinhança pode ser mais conectada e acolhedora!
+            </p>
+            </div>
+            <div class="sobre-img">
+                <img src="Imagens/./sobre/undraw_questions_re_1fy7.svg" alt="duas pessoas e um ? no meio">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="intro white-vg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+            <h2>Contate-nos</h2>
+        </div>
+        <div sem class="intro-img">
+            <img src="Imagens/./contato/undraw_mailbox_re_dvds.svg" alt="caixa de correio com cartas">
+        </div>
+        <div class="contato-form">
+            <fieldset class="form-grid">
+
+                <div class="form-group">
+                    <label for="primeiro-nome">Primeiro Nome</label>
+                    <input type="text" name="primeiro-nome" id="primeiro-nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="segundo-nome">Segundo Nome</label>
+                    <input type="text" name="segundo-nome" id="segundo-nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="enviar">Enviar</button>
+                </div>
+
+            </fieldset>
+            
+        </div>
+        </div>
+        
+    </section>
+
+    <footer id="footer" class="footer main-vg">
+        <p><a rel="nofollow" target="_blank" href="https://www.instagram.com/uninoveoficial/">Feito com carinho por alunos da UNINOVE</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

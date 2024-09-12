@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.main-vg {
+    background-image: url('Imagens/./img/backvg-1.svg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+}
+
+.white-vg {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+.intro-content {
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img
+ .intro-img svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.grid-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-content h2 {
+    margin-bottom: 8rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.sobre-content {
+    position: auto;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.sobre-text-content, .sobre-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+.sobre-img img
+ .sobre-img svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contato-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    border: 0.5rem solid var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: var(--white);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--white);
+
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-img img
+ .intro-img svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.emoji {
+    margin-top: 10rem;
+}
+
+.grid-content {
+    display: block;
+}
+
+.menu {
+    bottom: 0;
+    text-align: center;
+}
+
+.menu-content,.menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content {
+    height: 70vh;
+}
+
+.menu {
+    display: none;
+}
+
+.close-menu-label::after {
+    content: '☰';
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.close-menu:checked~.menu {
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    content: '×';
+}
+
+.menu-spacing {
+    display: none;
+}
+}
+
+.emoji {
+    font-size: 4rem;
+}
